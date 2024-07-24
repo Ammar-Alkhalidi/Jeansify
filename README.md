@@ -1,4 +1,4 @@
-# JEANSiFY#
+# JEANSiFY
 ![Screnshoot](imgs/Jeansify-online-shop.png)
 
 
