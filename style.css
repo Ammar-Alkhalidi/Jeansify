@@ -1,0 +1,217 @@
+@import url(https://fonts.bunny.net/css?family=pacifico:400); /* Font import from fonts bunny */
+
+/* Body Styling format */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* header Styling  */
+header {
+  background-color: #000000;
+  color: #f3efef;
+  padding: 10px 0;
+}
+
+/* logo left */
+.logo {
+  font-size: 2rem;
+  color: rgb(209, 51, 175);
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Pacifico", handwriting;
+}
+
+/* searchbar middle */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 6px 10px;
+  background-color: #be2899;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-bar button i {
+  color: #333;
+}
+/*  login and shoping cart  */
+.account a {
+  font-size: 1, 5rem;
+  color: rgb(209, 51, 175);
+  text-decoration: none;
+  margin: 0 5px;
+  display: inline;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.account a:hover {
+  color: #24262b;
+  background-color: #b4ac37;
+}
+.account a i {
+  margin-right: 5px;
+}
+
+/* main styling  */
+main {
+  padding: 20px;
+  background-color: #000000;
+}
+
+.main-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* main boxes top */
+.main-box {
+  background-color: #f17f7f;
+  padding: 20px;
+  border: 1px solid #646cdd;
+  border-radius: 10px;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-box i {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+/*  main boxes top img */
+.main-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+/* products boxes down  */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #c5df96;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #5d69d4;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* fotter styling */
+
+footer {
+  background-color: #000000;
+  color: #ca14c1;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* fotter social media */
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ca14c1;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    margin-top: 10px;
+  }
+
+  .main-boxes {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .main-box {
+    margin: 10px 0;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  .search-bar input {
+    width: 200px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
