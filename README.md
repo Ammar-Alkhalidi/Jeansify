@@ -1,6 +1,7 @@
 # JEANSiFY#
+![Screnshoot](imgs/Jeansify-online-shop.png)
 
-imgs/Jeansify-online-shop.png
+
 
 A Project made after requist from Hadi am 23.07.02024
 made with love by Ammar Alkhalidi https://github.com/Ammar-Alkhalidi
